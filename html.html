@@ -1,0 +1,31 @@
+<!-- Archivo HTML -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Mental Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Practice Mental Calendar</h1>
+
+        <label for="format">Formato de Fecha:</label>
+        <select id="format">
+            <option value="year-day-month">Año/Día/Mes</option>
+            <option value="day-month-year">Día/Mes/Año</option>
+            <option value="year-month-day">Año/Mes/Día</option>
+        </select>
+
+        <label for="speed">Velocidad (segundos entre partes):</label>
+        <input type="number" id="speed" min="1" max="10" value="3">
+
+        <button class="btn" onclick="generateDate()">Generar Fecha</button>
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
